@@ -10,13 +10,15 @@
 </head>
 
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+  <!-- Header -->
   <div id="header">
     <div class="container">
       <nav>
         <img src="images/Background.jpg" class="logo">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="">Services</a></li>
           <li><a href="">Portfolio</a></li>
           <li><a href="">Contact</a></li>
@@ -24,11 +26,11 @@
       </nav>
       <div class="header-text">
         <p>Web Developer and Automated Tester</p>
-        <h1>Hi, I'm <span>Worapon Jaidee</span><br> form Thailand</h1>
+        <h1><span>Worapon Jaidee</span><br>From Chiang Mai, Thailand</h1>
       </div>
     </div>
   </div>
-  <!-- Abbout -->
+  <!-- About -->
   <div id="about">
     <div class="container">
       <div class="row">
@@ -38,28 +40,51 @@
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Learning, in my opinion, is limitless. As a result, I never stop learning and always willing to embrace new
+            ideas in order to improve my current skills and become a better.
           </p>
+
           <div class="tab-titles">
-            <p class="tab-links active-link">Skills</p>
-            <p class="tab-links">Experience</p>
-            <p class="tab-links">Education</p>
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
           </div>
-          <div class="tab-contents">
+          <div class="tab-contents active-tab" id="skills">
             <ul>
-              <li><span>Web Developer</span><br>Hesadflkj;</li>
-              <li><span>Web Tester</span><br>Hesadflkj;</li>
-              <li><span>App Developer</span><br>Hesadflkj;</li>
+              <li class="skill-bar ninety">Research</li>
+              <li class="skill-bar eighty">HTML, CSS, Javascript</li>
+              <li class="skill-bar seventy">Cypress</li>
+              <li class="skill-bar sixty">Ruby on Rails HTML</li>
+              <li class="skill-bar eighty">Git</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <p style="color: bisque;">Banana Coding co. ltd</p>
+              </li>
+              <li><span><b> May 2022 - October 2022</b></span></li>
+              <li><b>Lost N' Found</b><br>Intership Developer</li>
+              <li><b>YJ - Apparel</b><br>Intership Automated Tester</li>
+              <li><b><span>December 2022 - Current</span></b></li>
+              <li><b>CORE - Market</b><br>Support Tester and Automated Tester</li>
+              <li><b><span>March 2023 - Current</span></b></li>
+              <li><b>DevOps</b><br>- Somsri</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span><b>2016 - 2018</b></span><br><b>Rangsee Vittaya School</b><br>High Shool: Science - Math</li>
+              <li><span><b>2019 - 2022</b></span><br><b>Maejo University</b><br>Bachelor's degree: Computer Science</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- Script -->
+  <script src="javascript/main.js"></script>
+  <script src="javascript/go_to_top.js"></script>
 </body>
 
 </html>
